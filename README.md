@@ -26,15 +26,15 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 
 <h2>Documentação das APIs</h2>
 <ul>
-<li><a href="https://pokdex1.docs.apiary.io/#">Documentação</a></li>
+<li><a href="https://pokdex1.docs.apiary.io/#" target="_blank">Documentação</a></li>
 </ul>
 
 <h2>Documentação das APIs</h2>
 <ul>
-<li><a href="https://bygkxkcrg8.execute-api.sa-east-1.amazonaws.com/testDef">Questionário</a></li>
-<li><a href="https://75ruc54rpk.execute-api.sa-east-1.amazonaws.com/testInst">Responder questionário</a></li>
-<li><a href="https://8ohpl05svh.execute-api.sa-east-1.amazonaws.com/notaTurma">Consultar detalhes da turma</a></li>
-<li><a href="https://ci5lnwmm57.execute-api.sa-east-1.amazonaws.com/notaAluno">Consultar detalhes do histórico de provas do aluno</a></li>
+<li><a href="https://bygkxkcrg8.execute-api.sa-east-1.amazonaws.com/testDef" target="_blank">Questionário</a></li>
+<li><a href="https://75ruc54rpk.execute-api.sa-east-1.amazonaws.com/testInst" target="_blank">Responder questionário</a></li>
+<li><a href="https://8ohpl05svh.execute-api.sa-east-1.amazonaws.com/notaTurma" target="_blank">Consultar detalhes da turma</a></li>
+<li><a href="https://ci5lnwmm57.execute-api.sa-east-1.amazonaws.com/notaAluno" target="_blank">Consultar detalhes do histórico de provas do aluno</a></li>
 </ul>
 
 <h2>Passo a passo para criar o projeto na AWS</h2>
