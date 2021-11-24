@@ -183,6 +183,6 @@ Após finalizar, repita esse processo para http-crud-testInst
 
 Todas as rotas mostram que há uma integração com o AWS Lambda anexada.
 
-<img src="./images/integrations.png" height = "145">
+<img src="./images/integrations.png" height = "350">
 
 Após finalizar, repita esse processo para http-crud-testInst
