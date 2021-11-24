@@ -26,7 +26,7 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 
 <h2>Documentação das APIs</h2>
 <ul>
-<li><a href="https://pokdex1.docs.apiary.io/#" target="_blank">Documentação</a></li>
+<li><a href="https://pokdex.docs.apiary.io/#" target="_blank">Documentação</a></li>
 </ul>
 
 <h2>Documentação das APIs</h2>
