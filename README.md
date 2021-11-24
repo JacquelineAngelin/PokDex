@@ -24,10 +24,6 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 <li>AWS API Gateway</li>
 </ul>
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-
 <h2>Documentação das APIs</h2>
 <ul>
 <li>https://pokdex1.docs.apiary.io/#</li>
@@ -187,35 +183,6 @@ Após finalizar, repita esse processo para http-crud-testInst
 
 Todas as rotas mostram que há uma integração com o AWS Lambda anexada.
 
-<img src="./images/integrations.png">
+<img src="./images/integrations.png" height = "145">
 
 Após finalizar, repita esse processo para http-crud-testInst
-
-----
-
-<h1> <img src="./images/Avatar - Clara64x64.png" height = "45" > Clara Assistente</h1>
-
-<h2>Aplicação</h2>
-
-Site de apoio à empresa ao mapeamento de sintomas da COVID-19 em seus colaboradores
-
-Preview: 👉 <a href="https://claraassistent.github.io/">Clara</a>
-
-<h2>Utilizados</h2>
-<ul>
-<li>IBM Watson</li>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>Google Fonts</li>
-<li>Fontawesome</li>
-</ul>
-
-<h2>Layout</h2>
-
-<img src="./images/Pg_Inicial.PNG">
-
-<img src="./images/Chatbot.PNG">
-
-<img src="./images/Contato.PNG">
-
-<img src="./images/Sobre.PNG">
