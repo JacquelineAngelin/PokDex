@@ -24,6 +24,10 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 <li>AWS API Gateway</li>
 </ul>
 
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
 <h2>Documentação das APIs</h2>
 <ul>
 <li>https://pokdex1.docs.apiary.io/#</li>
