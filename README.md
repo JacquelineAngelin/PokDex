@@ -40,18 +40,17 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 <h2>Passo a passo para criar o projeto na AWS</h2>
 
 <li>Criar tabela no banco de dados DynamoDB</li>
-<ul>
+
 - [] Abra o console do DynamoDB em https://console.aws.amazon.com/dynamodb/
 - [] Escolha Create table
 - [] Em Table name (Nome da tabela), insira http-crud-testDef-items
 - [] Em Primary key (Chave primária) insira id
 - [] Escolha Create (Criar)
-</ul>
 
 Repita esse processo para gerar uma tabela com o nome http-crud-testInst-items
 
 <li>Criar uma função lambda</li>
-<ul>
+
 - [] Abra o console do Lambda em https://console.aws.amazon.com/lambda
 - [] Escolha Create function (Criar função).
 - [] Em Function name (Nome da função), insira http-crud-testDef-function.
@@ -61,7 +60,7 @@ Repita esse processo para gerar uma tabela com o nome http-crud-testInst-items
 - [] Em Policy templates (Modelos de políticas), escolha Simple microservice permissions. Esta política concede à função do Lambda permissão para interagir com o DynamoDB.
 - [] Escolha Create function (Criar função).
 - [] Abra index.js no editor de código do console e substitua seu conteúdo pelo código a seguir. Escolha Deploy (Implantar) para atualizar a sua função.
-</ul>
+
 Repita esse processo para gerar uma tabela com o nome http-crud-testInst-items
 
 ```
@@ -135,7 +134,7 @@ exports.handler = async (event, context) => {
 ```
 
 <li>Crie uma API HTTP</li>
-<ul>
+
 - [] Inicie uma sessão no console do API Gateway em https://console.aws.amazon.com/apigateway
 - [] Escolha Create API (Criar API) e, em seguida, em API HTTP (API HTTP), escolha Build (Criar)
 - [] Em API name (Nome da API), insira http-crud-testDef-api
@@ -143,11 +142,11 @@ exports.handler = async (event, context) => {
 - [] Em Configure routes (Configurar rotas), escolha Next (Próximo) para ignorar a criação da rota. Você cria rotas mais tarde
 - [] Analise o estágio que o API Gateway cria para você e escolha Next (Avançar)
 - [] Escolha Create (Criar)
-</ul>
+
 Repita esse processo para http-crud-testInst
 
 <li>Crie rotas</li>
-<ul>
+
 - [] Inicie uma sessão no console do API Gateway em https://console.aws.amazon.com/apigateway.
 - [] Selecione a API.
 - [] Selecione Routes (Rotas).
@@ -156,11 +155,11 @@ Repita esse processo para http-crud-testInst
 - [] Para o caminho, insira /items/{id}. O {id} no final do caminho é um parâmetro de caminho que o API Gateway recupera do caminho de solicitação quando um cliente faz uma solicitação.
 - [] Escolha Create (Criar).
 - [] Repita as etapas quatro a sete para GET /items; DELETE /items/{id} e PUT /items.
-</ul>
+
 Após finalizar, repita esse processo para http-crud-testInst
 
 <li>Crie uma integração</li>
-<ul>
+
 - [] Inicie uma sessão no console do API Gateway em https://console.aws.amazon.com/apigateway.
 - [] Selecione a API.
 - [] Escolha Integrations (Integrações).
@@ -169,11 +168,11 @@ Após finalizar, repita esse processo para http-crud-testInst
 - [] Em Integration type (Tipo de integração), escolha Lambda function (Função do Lambda).
 - [] Em Lambda function (Função do Lambda), insira http-crud-testDef-function.
 - [] Escolha Create (Criar).
-</ul>
+
 Após finalizar, repita esse processo para http-crud-testInst
 
 <li>Anexe a sua integração às rotas</li>
-<ul>
+
 - [] Inicie uma sessão no console do API Gateway em https://console.aws.amazon.com/apigateway.
 - [] Selecione a API.
 - [] Escolha Integrations (Integrações).
@@ -181,7 +180,7 @@ Após finalizar, repita esse processo para http-crud-testInst
 - [] Em Choose an existing integration (Escolher uma integração existente), escolha http-crud-testDef-function.
 - [] Escolha Attach integration (Anexar integração).
 - [] Repita as etapas quatro a seis para todas as rotas.
-</ul>
+
 Todas as rotas mostram que há uma integração com o AWS Lambda anexada.
 
 <img src="./images/integrations.png">
