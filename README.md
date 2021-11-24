@@ -26,15 +26,15 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 
 <h2>Documentação das APIs</h2>
 <ul>
-<li>https://pokdex1.docs.apiary.io/#</li>
+<li><a href="https://pokdex1.docs.apiary.io/#">Documentação</li>
 </ul>
 
 <h2>Documentação das APIs</h2>
 <ul>
-<li>https://bygkxkcrg8.execute-api.sa-east-1.amazonaws.com/testDef</li>
-<li>https://75ruc54rpk.execute-api.sa-east-1.amazonaws.com/testInst</li>
-<li>https://8ohpl05svh.execute-api.sa-east-1.amazonaws.com/notaTurma</li>
-<li>https://ci5lnwmm57.execute-api.sa-east-1.amazonaws.com/notaAluno</li>
+<li><a href="https://bygkxkcrg8.execute-api.sa-east-1.amazonaws.com/testDef">Questionário</a></li>
+<li><a href="https://75ruc54rpk.execute-api.sa-east-1.amazonaws.com/testInst">Responder questionário</a></li>
+<li><a href="https://8ohpl05svh.execute-api.sa-east-1.amazonaws.com/notaTurma">Consultar detalhes da turma</li>
+<li><a href="https://ci5lnwmm57.execute-api.sa-east-1.amazonaws.com/notaAluno">Consultar detalhes do histórico de provas do aluno</li>
 </ul>
 
 <h2>Passo a passo para criar o projeto na AWS</h2>
