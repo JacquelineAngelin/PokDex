@@ -1,0 +1,53 @@
+        {
+            "peso": 2,
+            "periodo": 1,
+            "tipoPeriodo": "semestral",
+            "tema": "matemática",
+            "professor": "ana",
+            "pergunta": [
+                {
+                    "titulo": {
+                        "1": "Quanto é 2+2?",
+                        "2": "Quanto é 2456x0?",
+                        "3": "Qual dos itens tem quatro lados em 1 dimensão?"
+                    },
+                    "tipo": {
+                        "1": "única escolha",
+                        "2": "única escolha",
+                        "3": "múltipla escolha"
+                    },
+                    "alternativa": {
+                        "1": {
+                            "1": "2",
+                            "2": "1",
+                            "3": "0"
+                        },
+                        "2": {
+                            "1": "0",
+                            "2": "1",
+                            "3": "2"
+                        },
+                        "3": {
+                            "1": "círculo",
+                            "2": "quadrado",
+                            "3": "retangulo"
+                        }
+                    },
+                    "gabarito": {
+                        "1": {
+                            "1": "1"
+                        },
+                        "2": {
+                            "1": "1"
+                        },
+                        "3": {
+                            "1": "2",
+                            "2": "3"
+                        }
+                    }
+                }
+            ],
+            "duracao": 240,
+            "id": "1",
+            "instrucaoPreenchimento": "Prova com questões de única escolha e de múltipla escolha"
+        }
