@@ -1,0 +1,426 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# PokDex
+Esta API representa as interfaces disponiveis para acessar o servi;o de provas no formato digital.
+
+## Questionários [/questionarios]
+
+### PUT [PUT]
+
+Esta api tem como finalidade criar um modelo de questionário que será distribuido pra os alunos.
+
++ Request (application/json)
+
+        {
+            "peso": 2,
+            "periodo": 1,
+            "tipoPeriodo": "semestral",
+            "tema": "matemática",
+            "professor": "ana",
+            "pergunta": [{
+                "titulo": {
+                    "1": "Quanto é 2+2?",
+                    "2": "Quanto é 2456x0?",
+                    "3": "Qual dos itens tem quatro lados em 1 dimensão?"
+                },
+                "tipo": {
+                    "1": "única escolha",
+                    "2": "única escolha",
+                    "3": "múltipla escolha"
+                },
+                "alternativa": {
+                    "1": {
+                        "1": "2",
+                        "2": "1",
+                        "3": "0"
+                    },
+                    "2": {
+                        "1": "0",
+                        "2": "1",
+                        "3": "2"
+                    },
+                    "3": {
+                        "1": "círculo",
+                        "2": "quadrado",
+                        "3": "retangulo"
+                    }
+                },
+                "gabarito": {
+                    "1": {
+                        "1": "1"
+                    },
+                    "2": {
+                        "1": "1"
+                    },
+                    "3": {
+                        "1": "2",
+                        "2": "3"
+                    }
+                }
+            }],
+            "duracao": 240,
+            "id": "1",
+            "instrucaoPreenchimento": "Prova com questões de única escolha e de múltipla escolha"
+        }
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "Put id 1"
+            }
+            
+### DELETE [DELETE /:id]
+
+Esta api tem como finalidade deletar um modelo de questionário que seria distribuido pra os alunos.
+
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "Deleted id 1"
+            }
+
+### GET [GET]
+Esta Api devolve a lista de questionarios, se usada sem parametros de busca
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "dtEnd": "2021-11-09 22:43",
+                "idTurma": "1",
+                "idTestDef": "1",
+                "professor": "ana",
+                "instrucaoPreenchimento": "Prova com questões de única escolha e de múltipla escolha",
+                "nota": 10,
+                "aluno": "maria paula",
+                "idAluno": "1",
+                "pergunta": [
+                    {
+                        "titulo": {
+                            "1": "Quanto é 2+2?",
+                            "2": "Quanto é 2456x0?",
+                            "3": "Qual dos itens tem quatro lados em 1 dimensão?"
+                        },
+                        "tipo": {
+                            "1": "única escolha",
+                            "2": "única escolha",
+                            "3": "múltipla escolha"
+                        },
+                        "gabarito": {
+                            "1": {
+                                "1": "0",
+                                "2": "1",
+                                "3": "2"
+                            }
+                        }
+                    }
+                ],
+                "resposta": [
+                    {
+                        "1": {
+                            "1": "1"
+                        },
+                        "2": {
+                            "1": "1"
+                        },
+                        "3": {
+                            "1": "2",
+                            "2": "3"
+                        }
+                    }
+                ],
+                "dtStart": "2021-11-09 20:43",
+                "duracao": 240,
+                "id": "1",
+                "notaFinal": 2
+            }
+
+## Respostas [/respostas]
+
+### GET [GET]
+Esta Api ira listar todas as respotas dos usuários
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "dtEnd": "2021-11-09 22:43",
+                "idTurma": "1",
+                "idTestDef": "1",
+                "professor": "ana",
+                "instrucaoPreenchimento": "Prova com questões de única escolha e de múltipla escolha",
+                "nota": 10,
+                "aluno": "maria paula",
+                "idAluno": "1",
+                "pergunta": [
+                    {
+                        "titulo": {
+                            "1": "Quanto é 2+2?",
+                            "2": "Quanto é 2456x0?",
+                            "3": "Qual dos itens tem quatro lados em 1 dimensão?"
+                        },
+                        "tipo": {
+                            "1": "única escolha",
+                            "2": "única escolha",
+                            "3": "múltipla escolha"
+                        },
+                        "gabarito": {
+                            "1": {
+                                "1": "0",
+                                "2": "1",
+                                "3": "2"
+                            }
+                        }
+                    }
+                ],
+                "resposta": [
+                    {
+                        "1": {
+                            "1": "1"
+                        },
+                        "2": {
+                            "1": "1"
+                        },
+                        "3": {
+                            "1": "2",
+                            "2": "3"
+                        }
+                    }
+                ],
+                "dtStart": "2021-11-09 20:43",
+                "duracao": 240,
+                "id": "1",
+                "notaFinal": 2
+            }
+
+### PUT [PUT]
+Esta api envia resposta para ser automaticamente corrigida
+
++ Request (application/json)
+
+            {
+                "dtEnd": "2021-11-09 22:43",
+                "idTurma": "1",
+                "idTestDef": "1",
+                "professor": "ana",
+                "instrucaoPreenchimento": "Prova com questões de única escolha e de múltipla escolha",
+                "nota": 10,
+                "aluno": "maria paula",
+                "idAluno": "1",
+                "pergunta": [
+                    {
+                        "titulo": {
+                            "1": "Quanto é 2+2?",
+                            "2": "Quanto é 2456x0?",
+                            "3": "Qual dos itens tem quatro lados em 1 dimensão?"
+                        },
+                        "tipo": {
+                            "1": "única escolha",
+                            "2": "única escolha",
+                            "3": "múltipla escolha"
+                        },
+                        "gabarito": {
+                            "1": {
+                                "1": "0",
+                                "2": "1",
+                                "3": "2"
+                            }
+                        }
+                    }
+                ],
+                "resposta": [
+                    {
+                        "1": {
+                            "1": "1"
+                        },
+                        "2": {
+                            "1": "1"
+                        },
+                        "3": {
+                            "1": "2",
+                            "2": "3"
+                        }
+                    }
+                ],
+                "dtStart": "2021-11-09 20:43",
+                "duracao": 240,
+                "id": "1",
+                "notaFinal": 2
+            }
+        
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "Put id 1"
+            }
+            
+### DELETE [DELETE /:id]
+
+Esta api tem como finalidade deletar um modelo de questionário que será distribuido pra os alunos.
+
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "Deleted id 1"
+            }
+
+## Notas [/notas]
+
+### GET [GET /:id]
+
+Esta api tem como objetivo recuperar as notas do aluno
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "nomeAluno": "maria paula",
+                "historicoAluno": [
+                    {
+                        "1": {
+                            "1": 10
+                        },
+                        "2": {
+                            "10": 2,
+                            "20": 5
+                        },
+                        "3": {
+                            "3": 6
+                        }
+                    }
+                ],
+                "id": "1"
+            }
+
+### PUT [PUT /:id]
+Esta api tem como finalidade criar uma nota.
+
++ Request (application/json)
+
+            {
+                "nomeAluno": "maria paula",
+                "historicoAluno": [
+                    {
+                        "1": {
+                            "1": 10
+                        },
+                        "2": {
+                            "10": 2,
+                            "20": 5
+                        },
+                        "3": {
+                            "3": 6
+                        }
+                    }
+                ],
+                "id": "1"
+            }
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "Put id 1"
+            }
+            
+### DELETE [DELETE /:id]
+
+Esta api tem como finalidade Deletar uma nota.
+
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "Deleted id 1"
+            }
+## Turma [/turma]
+
+### GET [GET /:id]
+
+Esta api tem como objetivo recuperar as notas da turma
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "nomeTurma": "1C",
+                "id": "1",
+                "questRespondidos": [
+                    {
+                        "1": {
+                            "1": 10
+                        },
+                        "2": {
+                            "10": 2,
+                            "20": 5
+                        },
+                        "3": {
+                            "3": 6
+                        }
+                    }
+                ],
+                "nomeProfessor": "ana"
+            }
+
+### PUT [PUT /:id]
+Esta api tem como finalidade criar  ou atualizar uma turma
+
++ Request (application/json)
+
+            {
+                "nomeTurma": "1C",
+                "id": "1",
+                "questRespondidos": [
+                    {
+                        "1": {
+                            "1": 10
+                        },
+                        "2": {
+                            "10": 2,
+                            "20": 5
+                        },
+                        "3": {
+                            "3": 6
+                        }
+                    }
+                ],
+                "nomeProfessor": "ana"
+            }
+            
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "Put id 1"
+            }
+            
+### DELETE [DELETE /:id]
+
+Esta api tem como finalidade deletar uma turma.
+
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "Deleted id 1"
+            }
