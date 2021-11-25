@@ -29,7 +29,7 @@ Temos no backlog o desenvolvimento da integração da nossa solução à Alexa, 
 <li><a href="https://pokdex.docs.apiary.io/#" target="_blank">Documentação</a></li>
 </ul>
 
-<h2>Documentação das APIs</h2>
+<h2>Mocks das APIs</h2>
 <ul>
 <li><a href="https://bygkxkcrg8.execute-api.sa-east-1.amazonaws.com/testDef" target="_blank">Questionário</a></li>
 <li><a href="https://75ruc54rpk.execute-api.sa-east-1.amazonaws.com/testInst" target="_blank">Responder questionário</a></li>
